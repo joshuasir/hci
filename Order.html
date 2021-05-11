@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="./jquery-3.5.1.js">
+    </script>
+    <style>
+        @font-face {
+            font-family: Traffolight;
+            src: url(./fontTraffolight/Traffolight.otf);
+        }
+        
+        @media only screen and (max-width: 969px) {}
+        
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: Traffolight;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            color: rgb(75, 74, 74);
+        }
+        
+        .food h2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        p {
+            color: rgb(75, 74, 74);
+        }
+        
+        img {
+            width: 400px;
+            height: 380px;
+        }
+        
+        .food .items .item img {
+            height: 310px;
+        }
+        
+        .food .items .item img,
+        .drink .items .soju img {
+            border-radius: 40px;
+        }
+        
+        .food,
+        .dessert,
+        .drink {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .food .items,
+        .drink .items,
+        .dessert .items {
+            width: 100%;
+            height: 1400px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .dessert .items {
+            height: 100%;
+        }
+        
+        .food .items {
+            height: 1260px;
+        }
+        
+        h1 {
+            font-size: 80px;
+        }
+        
+        .food h2,
+        .drink h2,
+        .dessert h2 {
+            font-size: 60px;
+            height: 310px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .dessert h2 {
+            height: 270px;
+        }
+        
+        .food .items .item,
+        .drink .items .item,
+        .dessert .items .item,
+        .drink .items .soju {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            height: 600px;
+            font-size: 28px;
+        }
+        
+        .food .items .item .desc,
+        .drink .items .item .desc,
+        .dessert .items .item .desc,
+        .drink .items .soju .desc {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 130px;
+        }
+        
+        .h5 {
+            height: 28px;
+            font-size: 28px;
+            stroke: black;
+        }
+        
+        p {
+            font-size: 19px;
+            height: 19px;
+        }
+        
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            width: 140px;
+            height: 60px;
+            font-size: 21px;
+            font-family: Traffolight;
+            /* box-shadow: 5px 10px #a09f9f; */
+        }
+        
+        button:hover {
+            background-color: rgb(53, 53, 53);
+            cursor: pointer;
+        }
+        
+        button:active {
+            border: solid rgba(253, 253, 253, 0.219);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1> Menu </h1> -->
+    <img src="" alt="">
+    <div class="food">
+        <h2> Food </h2>
+        <div class="items">
+            <div class="item">
+                <img src="./images/bibimbap.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Bibimap </p>
+                    <p> Rp. 35.000,-</p>
+                </div>
+                <button> Order </button>
+
+            </div>
+            <div class="item">
+                <img src="./images/Dakgalbi.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Dakagalbi </p>
+                    <p> Rp. 30.000,-</p>
+                </div>
+                <button> Order </button>
+
+            </div>
+            <div class="item">
+                <img src="./images/Kimchi-Stew.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Kimchi </p>
+                    <p> Rp. 45.000,-</p>
+                </div>
+                <button> Order </button>
+
+            </div>
+            <div class="item">
+                <img src="./images/iStock-1253629795-1-1024x681.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Tteokbokki</p>
+                    <p> Rp. 35.000,-</p>
+                </div>
+                <button> Order </button>
+
+            </div>
+            <div class="item">
+                <img src="./images/bulgogi.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Bulgogi </p>
+                    <p>
+                        Rp. 45.000,-
+                    </p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/kimbapjpg.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Kimbap </p>
+                    <p>
+                        Rp. 40.000,-
+                    </p>
+                </div>
+                <button> Order </button>
+            </div>
+        </div>
+    </div>
+    <div class="dessert">
+        <h2> Dessert </h2>
+        <div class="items">
+            <div class="item">
+                <img src="./images/vanilabingsoo.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Vanila Bingsoo </p>
+                    <p> Rp. 20.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/chocobingsoo.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Choco Bingsoo </p>
+                    <p> Rp. 20.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/machabingsoo.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Macha Bingsoo </p>
+                    <p> Rp. 25.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/yogurtbingsoo.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Yogurt Bingsoo </p>
+                    <p> Rp. 25.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+        </div>
+    </div>
+    <div class="drink">
+        <h2> Drink </h2>
+        <div class="items">
+            <div class="item">
+                <img src="./images/koreanlemon.png" alt="">
+                <div class="desc">
+                    <p class="h5">
+                        Korean Lemon
+                    </p>
+                    <p> Rp. 15.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/jejuorange.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Jeju Orange </p>
+                    <p> Rp. 15.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/machamilktea.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Macha Milk Tea </p>
+                    <p> Rp. 15.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/chocobanana.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Choco Banana </p>
+                    <p> Rp. 15.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="item">
+                <img src="./images/koreantea.png" alt="">
+                <div class="desc">
+                    <p class="h5"> Korean Tea </p>
+                    <p> Rp. 10.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+            <div class="soju">
+                <img src="./images/soju.jpg" alt="">
+                <div class="desc">
+                    <p class="h5"> Soju </p>
+                    <p> Rp. 95.000,-</p>
+                </div>
+                <button> Order </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

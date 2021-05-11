@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @font-face {
+            font-family: Traffolight;
+            src: url(./fontTraffolight/Traffolight.otf);
+        }
+        
+        @media only screen and (max-width: 969px) {}
+        
+        body {
+            font-family: Traffolight;
+            margin: 0 0 0 0;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        
+        h3 {
+            font-size: 42px;
+        }
+        
+        .header,
+        .footer {
+            background-image: linear-gradient(#02162c, #023a4e);
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .banner {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .banner img {
+            width: 1658px;
+        }
+        
+        .about {
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+        }
+        
+        .about img {
+            width: 415px;
+            height: 572px;
+        }
+        
+        .about .side {
+            height: 500px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+        
+        .about .side .background img {
+            position: absolute;
+            width: 25%;
+            height: 44%;
+            opacity: 0.1;
+        }
+        
+        .about .side .background {
+            width: 100%;
+            height: 0px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        
+        .about .side .desc {
+            width: 100%;
+            height: 230px;
+            display: flex;
+            flex-flow: column;
+            padding: 50px;
+            justify-content: space-evenly;
+        }
+        
+        p,
+        h4 {
+            font-size: 24px;
+            color: rgb(48, 48, 48);
+            height: 24px;
+        }
+        
+        .about .side .bot {
+            height: 70px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .about .side h3 {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 60px;
+        }
+        
+        a {
+            position: absolute;
+            text-decoration: none;
+            color: black;
+            border: solid black 2px;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        .about a:hover,
+        .visit a:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-size: cover, cover;
+        }
+        
+        .menu p,
+        .menu h3 {
+            color: white;
+        }
+        
+        .menu .items {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+        }
+        
+        .menu .items .item {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .menu a,
+        .visit a {
+            position: relative;
+        }
+        
+        .menu a {
+            color: white;
+            border-color: white;
+        }
+        
+        .menu a:hover {
+            color: #02162c;
+            border-color: #02162c;
+            background-color: white;
+        }
+        
+        .visit .back {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.534)), url(./images/image-4061-1600.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-size: cover, cover;
+            width: 100%;
+            height: 1000px;
+        }
+        
+        .visit .back .white {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 1000px;
+            width: 45%;
+            background-color: white;
+        }
+        
+        .visit h3,
+        .visit p {
+            height: 90px;
+        }
+        
+        h4 {
+            color: rgb(107, 107, 107);
+        }
+        
+        .city {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        
+        .footer {
+            height: 110px;
+            background-color: #02162c;
+            background-image: none;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./images/DanbamLogo2.png" alt="" width="145px" height="115px">
+    </div>
+    <div class="body">
+        <div class="banner">
+            <img src="./images/bigbanner.jpg" alt="">
+        </div>
+        <div class="about">
+            <img src="./images/6f17c91071f9e6990e5507f18e944e8c.jpg" alt="">
+            <div class="side">
+                <div class="background">
+                    <img src="./images/DanbamLogoonly.png" alt="">
+
+                    <h3> About </h3>
+                </div>
+                <div class="desc">
+
+                    <p> Danbam is a korean cuisine restaurant and a soju bar, we serve authentic korean food and open 24 hours</p>
+                </div>
+
+                <div class="bot">
+
+                    <a href="About.html"> More About Us </a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <h3> Menu </h3>
+            <p> Here is a little collection of our signature dish </p>
+            <div class="items">
+                <div class="item">
+                    <img src="./images/item8.png" alt="">
+                    <p> Tteokbokki </p>
+                </div>
+                <div class="item">
+                    <img src="./images/item7.png" alt="">
+                    <p> Kimchi Stew </p>
+                </div>
+                <div class="item">
+                    <img src="./images/item6.png" alt="">
+                    <p> Bimbibap </p>
+                </div>
+            </div>
+            <a href="Order.html"> See All Menus </a>
+            <br>
+            <br>
+        </div>
+        <div class="visit">
+            <div class="back">
+                <div class="white">
+                    <h3> Visit Us </h3>
+                    <div class="cities">
+                        <div class="city">
+                            <h4> Jakarta </h4>
+                            <p> </p>
+                        </div>
+                        <div class="city">
+                            <h4> Bandung </h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <a href=""> See Location </a>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p> Copy right by </p>
+    </div>
+</body>
+
+</html>
