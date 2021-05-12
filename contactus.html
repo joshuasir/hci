@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="name" id="name" placeholder="Insert Your Name" required>
+        <p id="name_error"></p>
+        <input type="email" name="email" id="email" placeholder="Insert Your Email" required>
+        <p id="email_error"></p>
+        <select name="gender" id="gender">
+			<option value="">-</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select>
+        <p id="gender_error"></p>
+        <textarea name="location" id="location" cols="30" rows="10" required placeholder="Type Your Location Here"></textarea>
+        <p id="location_error"></p>
+        <textarea name="message" id="message" cols="30" rows="10" required placeholder="Type Your Message Here"></textarea>
+        <p id="message_error"></p>
+        <input type="button" onclick="submitTrigger()" value="Submit">
+    </form>
+</body>
+<script>
+    function validateEmail(email) {
+        var a = email.indexOf("@");
+        if (a < 1) {
+            return false;
+        }
+        var d = email.indexOf(".");
+        if (d <= a + 2) {
+            return false;
+        }
+        if (d === email.length - 1) {
+            return false;
+        }
+        return true;
+    }
+
+    function submitTrigger() {
+        // get input value
+        let name = document.getElementById("name").value
+        let email = document.getElementById("email").value
+        let gender = document.getElementById("gender").value
+        let location = document.getElementById("location").value
+        let message = document.getElementById("message").value
+            // validate input value
+        if (name.length < 3) {
+            document.getElementById("name_error").innerHTML = "Please Insert Name! [Minimum Length : 3]";
+        } else {
+            document.getElementById("name_error").innerHTML = "";
+        }
+        if (validateEmail(email)) {
+            document.getElementById("email_error").innerHTML = "";
+        } else {
+            document.getElementById("email_error").innerHTML = "Please Insert The Correct Email Format! [example: username@gmail.com]";
+        }
+        if (gender == "") {
+            document.getElementById("gender_error").innerHTML = "Please Select Gender!";
+        } else {
+            document.getElementById("gender_error").innerHTML = "";
+        }
+        if (location.length < 10) {
+            document.getElementById("location_error").innerHTML = "Please Insert Location! [Minimum Length : 10]";
+        } else {
+            document.getElementById("location_error").innerHTML = "";
+        }
+        if (message.length == 0) {
+            document.getElementById("message_error").innerHTML = "Please Insert Message!";
+        } else {
+            document.getElementById("message_error").innerHTML = "";
+        }
+    }
+</script>
+
+</html>
