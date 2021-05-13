@@ -214,11 +214,34 @@
         }
 
         input,select {
+            height: 20px;
             width: 100%;
         }
 
         p {
             color: red;
+            font-size: 24px;
+        }
+
+        #button {
+            border: none;
+            background-color: #02162c;
+            color: white;
+            width: 120px;
+            height: 60px;
+            font-size: 21px;
+            padding: 20px;
+            font-family: Traffolight;
+            /* box-shadow: 5px 10px #a09f9f; */
+        }
+        
+        #button:hover {
+            background-color: #02162ccb;
+            cursor: pointer;
+        }
+        
+        #button:active {
+            border: solid rgba(253, 253, 253, 0.219);
         }
     </style>
 </head>
@@ -257,7 +280,7 @@
         <label for="message">Message</label> <br>
         <textarea name="message" id="message" cols="100" rows="3" required placeholder="Type Your Message Here"></textarea>
         <p id="message_error"></p>
-        <input type="button" onclick="submitTrigger()" value="Submit">
+        <input type="button" onclick="submitTrigger()" value="Submit" id="button">
     </form>
 
     <div class="footer">
