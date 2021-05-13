@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <script src="./jquery-3.5.1.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="./jquery-3.5.1.js"> -->
     </script>
     <style>
         @font-face {
@@ -148,12 +149,47 @@
         button:active {
             border: solid rgba(253, 253, 253, 0.219);
         }
+
+        .slides {
+            text-align: center;
+            margin: 3rem;
+        }
+
+        #slider {
+            width: 720px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        #slider .slides {
+            display: block;
+            width: 6000px;
+            height: 400px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #slider .slide {
+            float: left;
+            list-style-type: none;
+            width: 720px;
+            height: 400px;
+        }
+
     </style>
 </head>
 
 <body>    
-    <img src="" alt="">
     <div class="food">
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide slide1"><img src="images/bibimbap.jpg"></li>
+                <li class="slide slide2"><img src="images/bulgogi.jpg"></li>
+                <li class="slide slide3"><img src="images/Dakgalbi.jpg"></li>
+                <li class="slide slide4"><img src="images/kimbapjpg.jpg"></li>
+                <li class="slide slide5"><img src="images/vanilabingsoo.png"></li>
+            </ul>
+        </div>
         <h2> Food </h2>
         <div class="items">
             <div class="item">
@@ -307,5 +343,33 @@
         </div>
     </div>
 </body>
+
+<script>
+
+$(function() {
+    var curr = 1;
+    var $wrapper = $('.slides', '#slider');
+    var $slider = $('.slide', '#slider');
+    var interval;
+    function init() {
+        interval = setInterval(function() {
+            $wrapper.animate({'margin-left': '-='+720}, 1000, function() {
+                if (++curr === $slider.length) {
+                    curr = 1;
+                    $wrapper.css('margin-left', 0);
+                }
+            });
+        }, 100);
+    }
+    function stop() {
+        clearInterval(interval);
+    }
+    $wrapper
+        .on('mouseenter', stop)
+        .on('mouseleave', init);
+
+    init();
+});
+</script>
 
 </html>
