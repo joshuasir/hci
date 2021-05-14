@@ -20,7 +20,159 @@
             flex-flow: column;
             justify-content: space-between;
             align-items: center;
+            margin: 0;
         }
+
+
+        h3 {
+            font-size: 42px;
+        }
+        
+        .header,
+        .footer {
+            background-image: linear-gradient(#02162c, #023a4e);
+            display: flex;
+            width: 99.8%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+        }
+        
+        .dropmenu {
+            display: inline-block;
+            width: 170px;
+        }
+        
+        .content {
+            display: none;
+            position: absolute;
+        }
+                
+        .content a {
+            position: absolute;
+            text-decoration: none;
+            color: black;
+            border: solid black 2px;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
+        .about a:hover,
+        .visit a:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-size: cover, cover;
+        }
+        
+        .menu p,
+        .menu h3 {
+            color: white;
+        }
+        
+        .menu .items {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+        }
+        
+        .menu .items .item {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .menu a,
+        .visit a {
+            position: relative;
+        }
+        
+        .menu a {
+            color: white;
+            border-color: white;
+        }
+        
+        .menu a:hover {
+            color: #02162c;
+            border-color: #02162c;
+            background-color: white;
+        }
+        
+        .visit .back {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.534)), url(./images/image-4061-1600.jpg);
+            background-repeat: no-repeat, no-repeat;
+            background-size: cover, cover;
+            width: 100%;
+            height: 1000px;
+        }
+        
+        .visit .back .white {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 1000px;
+            width: 45%;
+            background-color: white;
+        }
+        
+        .visit h3,
+        .visit p {
+            height: 90px;
+        }
+        
+        h4,
+        .visit p {
+            color: rgb(107, 107, 107);
+        }
+        
+        .footer {
+            height: 110px;
+            background-color: #02162c;
+            background-image: none;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropmenu:hover .content {
+            display: flex;
+            flex-flow: column;
+        }
+        
+        .dropmenu:hover .content a {
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 110px;
+            font-size: 26px;
+            color: white;
+            background-color: #0e4052;
+            border: 2px;
+        }
+        
+        .dropmenu:hover .content a:hover {
+            background-color: #214d5e;
+        }
+
         
         .sosmed,
         .sosmed a {
@@ -79,6 +231,20 @@
 </head>
 
 <body>    
+    <div class="header">
+        <img src="./images/DanbamLogo2.png" alt="" width="125px" height="95px">
+        <div class="dropmenu">
+            <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
+            <div class="content">
+                <a href="Home.html"> Home </a>
+                <a href="About.html"> About </a>
+                <a href="Order.html"> Menu </a>
+                <a href="location.html"> Location </a>
+                <a href="contactus.html"> Contact Us </a>
+            </div>
+        </div>
+    </div>
+
     <h1> About our restaurant </h1>
     <img src="./images/place.png" width="893px" height="643px" alt="">
 
@@ -96,6 +262,9 @@
         <a href="www.instagram.com" class="ig"><img src="./images/iglogo.png" alt=""></a>
     </div>
     <br><br>
+    <div class="footer">
+        <p class="text"> Copy right by </p>
+    </div>
 </body>
 
 </html>
