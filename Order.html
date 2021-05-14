@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="./jquery-3.5.1.js"> -->
-    </script>
+    <script src="slider.js"></script>
     <link rel="stylesheet" type="text/css" href="./order.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
@@ -20,23 +19,22 @@
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
                 <a href="About.html"> About </a>
-                <a href="Order.html"> Menu </a>
+                <a class="userloc" href="Order.html"> Menu </a>
                 <a href="location.html"> Location </a>
                 <a href="contactus.html"> Contact </a>
             </div>
         </div>
     </div>
-
+    <div id="slider">
+        <ul class="slides">
+            <li class="slide slide1"><img src="images/ad1.jpg"></li>
+            <li class="slide slide2"><img src="images/ad2.jpg"></li>
+            <li class="slide slide3"><img src="images/ad3.jpg"></li>
+            <li class="slide slide4"><img src="images/ad4.jpg"></li>
+            <li class="slide slide5"><img src="images/ad5.jpg"></li>
+        </ul>
+    </div>
     <div class="food">
-        <div id="slider">
-            <ul class="slides">
-                <li class="slide slide1"><img src="images/ad1.jpg"></li>
-                <li class="slide slide2"><img src="images/ad2.jpg"></li>
-                <li class="slide slide3"><img src="images/ad3.jpg"></li>
-                <li class="slide slide4"><img src="images/ad4.jpg"></li>
-                <li class="slide slide5"><img src="images/ad5.jpg"></li>
-            </ul>
-        </div>
         <h2> Food </h2>
         <div class="items">
             <div class="item">
@@ -193,36 +191,5 @@
         <p class="text"> Copy right by </p>
     </div>
 </body>
-
-<script>
-    $(function() {
-        var curr = 1;
-        var $wrapper = $('.slides', '#slider');
-        var $slider = $('.slide', '#slider');
-        var interval;
-
-        function init() {
-            interval = setInterval(function() {
-                $wrapper.animate({
-                    'margin-left': '-=' + 1420
-                }, 1000, function() {
-                    if (++curr === $slider.length) {
-                        curr = 1;
-                        $wrapper.css('margin-left', 0);
-                    }
-                });
-            }, 4000);
-        }
-
-        function stop() {
-            clearInterval(interval);
-        }
-        $wrapper
-            .on('mouseenter', stop)
-            .on('mouseleave', init);
-
-        init();
-    });
-</script>
 
 </html>
