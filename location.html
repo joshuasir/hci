@@ -25,6 +25,13 @@
             font-size: 42px;
         }
         
+        .dropmenu a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+        }
+        
         .header,
         .footer {
             background-image: linear-gradient(#02162c, #023a4e);
@@ -43,142 +50,6 @@
         .content {
             display: none;
             position: absolute;
-        }
-        
-        .banner {
-            width: 100%;
-            background-color: black;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .banner img {
-            width: 1658px;
-        }
-        
-        .about {
-            width: 100%;
-            display: flex;
-            flex-flow: row;
-        }
-        
-        .about img {
-            width: 415px;
-            height: 572px;
-        }
-        
-        .about .side {
-            height: 500px;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-evenly;
-        }
-        
-        .about .side .background img {
-            position: absolute;
-            width: 25%;
-            height: 44%;
-            opacity: 0.1;
-        }
-        
-        .about .side .background {
-            width: 100%;
-            height: 0px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-        }
-        
-        .about .side .desc {
-            width: 100%;
-            height: 230px;
-            display: flex;
-            flex-flow: column;
-            padding: 50px;
-            justify-content: space-evenly;
-        }
-        
-        p,
-        h4 {
-            font-size: 24px;
-            color: rgb(48, 48, 48);
-            height: 24px;
-        }
-        
-        .about .side .bot {
-            height: 70px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .about .side h3 {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            padding: 60px;
-        }
-        
-        a {
-            position: absolute;
-            text-decoration: none;
-            color: black;
-            border: solid black 2px;
-            font-size: 20px;
-            padding: 20px;
-        }
-        
-        .about a:hover,
-        .visit a:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        .menu {
-            width: 100%;
-            height: 700px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-evenly;
-            background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover;
-        }
-        
-        .menu p,
-        .menu h3 {
-            color: white;
-        }
-        
-        .menu .items {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-        }
-        
-        .menu .items .item {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        
-        .menu a,
-        .visit a {
-            position: relative;
-        }
-        
-        .menu a {
-            color: white;
-            border-color: white;
-        }
-        
-        .menu a:hover {
-            color: #02162c;
-            border-color: #02162c;
-            background-color: white;
         }
         
         .footer {
@@ -221,7 +92,7 @@
 
 <body>
     <div class="header">
-        <img src="./images/DanbamLogo2.png" alt="" width="125px" height="95px">
+        <a href="Home.html"><img src="./images/DanbamLogo2.png" alt="" width="125px" height="95px"></a>
         <div class="dropmenu">
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
@@ -234,8 +105,7 @@
         </div>
     </div>
     <p>Jl. Gajah Mada Raya No. 92, Gajah Mada, Jakarta Barat</p>
-    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Gajah%20Mada%20Raya%20No.%2092,%20Gajah%20Mada,%20Jakarta%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0"
-            marginwidth="0"></iframe>
+    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Gajah%20Mada%20Raya%20No.%2092,%20Gajah%20Mada,%20Jakarta%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     <p>Jl. Ir. H. Juanda No. 181 - 183, Dago Atas, Bandung</p>
     <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Ir.%20H.%20Juanda%20No.%20181%20-%20183,%20Dago%20Atas,%20Bandung&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 

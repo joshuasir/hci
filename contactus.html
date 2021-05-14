@@ -96,7 +96,7 @@
             padding: 50px;
             justify-content: space-evenly;
         }
-                
+        
         .about .side .bot {
             height: 70px;
             display: flex;
@@ -110,11 +110,9 @@
             padding: 60px;
         }
         
-        a {
-            position: absolute;
+        .dropmenu a {
             text-decoration: none;
-            color: black;
-            border: solid black 2px;
+            color: white;
             font-size: 20px;
             padding: 20px;
         }
@@ -173,7 +171,6 @@
             background-color: white;
         }
         
-        
         .footer {
             height: 110px;
             background-color: #02162c;
@@ -208,21 +205,22 @@
         .dropmenu:hover .content a:hover {
             background-color: #214d5e;
         }
-
+        
         form {
             padding: 5rem;
         }
-
-        input,select {
+        
+        input,
+        select {
             height: 20px;
             width: 100%;
         }
-
+        
         p {
             color: red;
             font-size: 24px;
         }
-
+        
         #button {
             border: none;
             background-color: #02162c;
@@ -248,7 +246,7 @@
 
 <body>
     <div class="header">
-        <img src="./images/DanbamLogo2.png" alt="" width="125px" height="95px">
+        <a href="Home.html"><img src="./images/DanbamLogo2.png" alt="" width="125px" height="95px"></a>
         <div class="dropmenu">
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
@@ -311,9 +309,9 @@
         let gender = document.getElementById("gender").value
         let location = document.getElementById("location").value
         let message = document.getElementById("message").value
-        // validate input value
+            // validate input value
         if (name.length < 3) {
-            document.getElementById("name_error").innerHTML = "Please Insert Name! [Minimum Length : 3]";
+            document.getElementById("name_error").innerHTML = "Please Insert Name! [Minimum Length 3]";
             error++
         } else {
             document.getElementById("name_error").innerHTML = "";
@@ -321,7 +319,7 @@
         if (validateEmail(email)) {
             document.getElementById("email_error").innerHTML = "";
         } else {
-            document.getElementById("email_error").innerHTML = "Please Insert The Correct Email Format! [example: username@gmail.com]";
+            document.getElementById("email_error").innerHTML = "Please Insert The Correct Email Format! [username@gmail.com]";
             error++
         }
         if (gender == "") {
@@ -331,7 +329,7 @@
             document.getElementById("gender_error").innerHTML = "";
         }
         if (location.length < 10) {
-            document.getElementById("location_error").innerHTML = "Please Insert Location! [Minimum Length : 10]";
+            document.getElementById("location_error").innerHTML = "Please Insert Location! [Minimum Length 10]";
             error++
         } else {
             document.getElementById("location_error").innerHTML = "";
@@ -349,7 +347,7 @@
             document.getElementById("gender").value = ""
             document.getElementById("location").value = ""
             document.getElementById("message").value = ""
-        } 
+        }
     }
 </script>
 
