@@ -39,8 +39,8 @@ select {
 
 textarea {
     border: none;
-    background-color: #3f788d91;
-    height: 160px;
+    background-color: #c0dfeb88;
+    height: 190px;
     border-radius: 5px;
     padding: 7px;
     font-size: 14px;
@@ -51,6 +51,10 @@ textarea:focus,
 select:focus {
     outline: none;
     border-color: #48719e
+}
+
+select {
+    padding: 2px;
 }
 
 option {
