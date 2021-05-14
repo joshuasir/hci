@@ -1,0 +1,94 @@
+body {
+    font-family: Traffolight;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+form {
+    padding: 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+input,
+select {
+    height: 20px;
+    width: 100%;
+}
+
+label {
+    font-size: 26px;
+    height: 28px;
+    padding-bottom: 9px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+}
+
+input,
+select {
+    border: none;
+    border-bottom: #02162cbb solid 1.1px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+textarea {
+    border: none;
+    background-color: #3f788d91;
+    height: 160px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #48719e
+}
+
+option {
+    border: none;
+    color: rgb(49, 49, 49);
+    background-color: #3f788d2d;
+}
+
+p {
+    color: rgb(228, 4, 4);
+    font-size: 14px;
+}
+
+#button {
+    border: none;
+    background-color: #02162c;
+    color: white;
+    width: 120px;
+    height: 60px;
+    font-size: 21px;
+    padding: 20px;
+    font-family: Traffolight;
+    /* box-shadow: 5px 10px #a09f9f; */
+}
+
+#button:hover {
+    background-color: #02162ccb;
+    cursor: pointer;
+}
+
+#button:active {
+    border: solid rgba(253, 253, 253, 0.219);
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}

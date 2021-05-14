@@ -6,244 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> About </title>
-    <style type="text/css">
-        @font-face {
-            font-family: Traffolight;
-            src: url(./fontTraffolight/Traffolight.otf);
-        }
-        
-        @media only screen and (max-width: 969px) {}
-        
-        body {
-            height: 100%;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0;
-        }
-        
-        h3 {
-            font-size: 42px;
-        }
-        
-        .header,
-        .footer {
-            background-image: linear-gradient(#02162c, #023a4e);
-            display: flex;
-            width: 99.8%;
-            justify-content: space-between;
-            align-items: center;
-            font-family: Traffolight;
-            padding: 3px;
-        }
-        
-        .dropmenu {
-            display: inline-block;
-            width: 170px;
-        }
-        
-        .content {
-            display: none;
-            position: absolute;
-        }
-        
-        .content a {
-            position: absolute;
-            text-decoration: none;
-            color: black;
-            border: solid black 2px;
-            font-size: 20px;
-            padding: 20px;
-        }
-        
-        .footer {
-            height: 110px;
-            width: 100%;
-            background-color: #02162c;
-            background-image: none;
-            display: flex;
-            flex-flow: column;
-            align-items: flex-end;
-            justify-content: space-evenly;
-        }
-        
-        .footer p {
-            color: white;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .about a:hover,
-        .visit a:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        .menu {
-            width: 100%;
-            height: 700px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-evenly;
-            background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover;
-        }
-        
-        .menu p,
-        .menu h3 {
-            color: white;
-        }
-        
-        .menu .items {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-        }
-        
-        .menu .items .item {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        
-        .menu a,
-        .visit a {
-            position: relative;
-        }
-        
-        .menu a {
-            color: white;
-            border-color: white;
-        }
-        
-        .menu a:hover {
-            color: #02162c;
-            border-color: #02162c;
-            background-color: white;
-        }
-        
-        .visit .back {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.534)), url(./images/image-4061-1600.jpg);
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover;
-            width: 100%;
-            height: 1000px;
-        }
-        
-        .visit .back .white {
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 1000px;
-            width: 45%;
-            background-color: white;
-        }
-        
-        .visit h3,
-        .visit p {
-            height: 90px;
-        }
-        
-        h4,
-        .visit p {
-            color: rgb(107, 107, 107);
-        }
-        
-        .footer {
-            height: 110px;
-            background-color: #02162c;
-            background-image: none;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .dropmenu:hover .content {
-            display: flex;
-            flex-flow: column;
-        }
-        
-        .dropmenu:hover .content a {
-            position: relative;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            width: 110px;
-            font-size: 26px;
-            color: white;
-            background-color: #0e4052;
-            border: 2px;
-        }
-        
-        .dropmenu:hover .content a:hover {
-            background-color: #214d5e;
-        }
-        
-        .sosmed,
-        .sosmed a {
-            height: 35px;
-        }
-        
-        .sosmed a img {
-            width: 30px;
-            height: 30;
-        }
-        
-        .sosmed .ut img {
-            width: 40px;
-        }
-        
-        h1,
-        p,
-        .sosmed {
-            font-family: Traffolight;
-            height: 100px;
-            font-size: 50px;
-        }
-        
-        .logo {
-            opacity: 0.2;
-            position: absolute;
-        }
-        
-        .logopos {
-            width: 1200px;
-            height: 140px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-        }
-        
-        p {
-            display: flex;
-            align-items: center;
-            color: rgb(141, 140, 140);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            height: 190px;
-            width: 1200px;
-            font-size: 18px;
-        }
-        
-        .sosmed {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-between;
-            align-items: flex-end;
-            width: 125px;
-            height: 70px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./about.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
 <body>
@@ -252,11 +16,10 @@
         <div class="dropmenu">
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
-                <a href="Home.html"> Home </a>
                 <a href="About.html"> About </a>
                 <a href="Order.html"> Menu </a>
                 <a href="location.html"> Location </a>
-                <a href="contactus.html"> Contact Us </a>
+                <a href="contactus.html"> Contact </a>
             </div>
         </div>
     </div>
@@ -264,7 +27,7 @@
     <h1> About our restaurant </h1>
     <img src="./images/place.png" width="893px" height="643px" alt="">
 
-    <p>
+    <p id="about">
         DanBam was found in 2020 by Park Sae-ro-yi and have been serving traditional korean food and a soju bar ever since.
         <br>
         <br> DanBam comes from two words Dan (단) which mean sweet and Bam (밤) which mean night. We hope to recapture that sweet night vibe throught our food and services. We serve the best quality of food and open 24 hours a day.

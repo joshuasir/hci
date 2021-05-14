@@ -3,245 +3,8 @@
 
 <head>
     <title></title>
-    <style type="text/css">
-        @font-face {
-            font-family: Traffolight;
-            src: url(./fontTraffolight/Traffolight.otf);
-        }
-        
-        @media only screen and (max-width: 969px) {}
-        
-        body {
-            font-family: Traffolight;
-            margin: 0;
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
-        
-        h3 {
-            font-size: 42px;
-        }
-        
-        .header,
-        .footer {
-            background-image: linear-gradient(#02162c, #023a4e);
-            display: flex;
-            width: 99.8%;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3px;
-        }
-        
-        .dropmenu {
-            display: inline-block;
-            width: 170px;
-        }
-        
-        .content {
-            display: none;
-            position: absolute;
-        }
-        
-        .banner {
-            width: 100%;
-            background-color: black;
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .banner img {
-            width: 1658px;
-        }
-        
-        .about {
-            width: 100%;
-            display: flex;
-            flex-flow: row;
-        }
-        
-        .about img {
-            width: 415px;
-            height: 572px;
-        }
-        
-        .about .side {
-            height: 500px;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-evenly;
-        }
-        
-        .about .side .background img {
-            position: absolute;
-            width: 25%;
-            height: 44%;
-            opacity: 0.1;
-        }
-        
-        .about .side .background {
-            width: 100%;
-            height: 0px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-        }
-        
-        .about .side .desc {
-            width: 100%;
-            height: 230px;
-            display: flex;
-            flex-flow: column;
-            padding: 50px;
-            justify-content: space-evenly;
-        }
-        
-        .about .side .bot {
-            height: 70px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .about .side h3 {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            padding: 60px;
-        }
-        
-        .dropmenu a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            padding: 20px;
-        }
-        
-        .about a:hover,
-        .visit a:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        .menu {
-            width: 100%;
-            height: 700px;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: space-evenly;
-            background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
-            background-repeat: no-repeat, no-repeat;
-            background-size: cover, cover;
-        }
-        
-        .menu p,
-        .menu h3 {
-            color: white;
-        }
-        
-        .menu .items {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            flex-flow: row;
-            justify-content: space-evenly;
-        }
-        
-        .menu .items .item {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        
-        .menu a,
-        .visit a {
-            position: relative;
-        }
-        
-        .menu a {
-            color: white;
-            border-color: white;
-        }
-        
-        .menu a:hover {
-            color: #02162c;
-            border-color: #02162c;
-            background-color: white;
-        }
-        
-        .footer {
-            height: 110px;
-            background-color: #02162c;
-            background-image: none;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .footer p {
-            color: white;
-        }
-        
-        .dropmenu:hover .content {
-            display: flex;
-            flex-flow: column;
-        }
-        
-        .dropmenu:hover .content a {
-            position: relative;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            width: 110px;
-            font-size: 26px;
-            color: white;
-            background-color: #0e4052;
-            border: 2px;
-        }
-        
-        .dropmenu:hover .content a:hover {
-            background-color: #214d5e;
-        }
-        
-        form {
-            padding: 5rem;
-        }
-        
-        input,
-        select {
-            height: 20px;
-            width: 100%;
-        }
-        
-        p {
-            color: red;
-            font-size: 24px;
-        }
-        
-        #button {
-            border: none;
-            background-color: #02162c;
-            color: white;
-            width: 120px;
-            height: 60px;
-            font-size: 21px;
-            padding: 20px;
-            font-family: Traffolight;
-            /* box-shadow: 5px 10px #a09f9f; */
-        }
-        
-        #button:hover {
-            background-color: #02162ccb;
-            cursor: pointer;
-        }
-        
-        #button:active {
-            border: solid rgba(253, 253, 253, 0.219);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./contactus.css">
 </head>
 
 <body>
@@ -250,11 +13,10 @@
         <div class="dropmenu">
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
-                <a href="Home.html"> Home </a>
                 <a href="About.html"> About </a>
                 <a href="Order.html"> Menu </a>
                 <a href="location.html"> Location </a>
-                <a href="contactus.html"> Contact Us </a>
+                <a href="contactus.html"> Contact </a>
             </div>
         </div>
     </div>
@@ -262,23 +24,29 @@
         <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Insert Your Name" required>
         <p id="name_error"></p>
+
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Insert Your Email" required>
         <p id="email_error"></p>
+
         <label for="gender">Gender</label>
         <select name="gender" id="gender">
 			<option value="">-</option>
 			<option value="male">Male</option>
 			<option value="female">Female</option>
 		</select>
+
         <p id="gender_error"></p>
         <label for="location">Location</label> <br>
         <textarea name="location" id="location" cols="100" rows="3" required placeholder="Type Your Location Here"></textarea>
         <p id="location_error"></p>
+
         <label for="message">Message</label> <br>
         <textarea name="message" id="message" cols="100" rows="3" required placeholder="Type Your Message Here"></textarea>
         <p id="message_error"></p>
-        <input type="button" onclick="submitTrigger()" value="Submit" id="button">
+        <div class="center">
+            <input type="button" onclick="submitTrigger()" value="Submit" id="button">
+        </div>
     </form>
 
     <div class="footer">

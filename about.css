@@ -1,0 +1,66 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+.sosmed,
+.sosmed a {
+    height: 35px;
+}
+
+.sosmed a img {
+    width: 30px;
+    height: 30;
+}
+
+.sosmed .ut img {
+    width: 40px;
+}
+
+h1,
+p,
+.sosmed {
+    font-family: Traffolight;
+    height: 100px;
+    font-size: 50px;
+}
+
+.logo {
+    opacity: 0.2;
+    position: absolute;
+}
+
+.logopos {
+    width: 1200px;
+    height: 140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    color: rgb(141, 140, 140);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 190px;
+    width: 1200px;
+    font-size: 18px;
+}
+
+.sosmed {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 125px;
+    height: 70px;
+}

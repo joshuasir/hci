@@ -4,90 +4,8 @@
 <head>
     <title></title>
 
-    <style type="text/css">
-        @font-face {
-            font-family: Traffolight;
-            src: url(./fontTraffolight/Traffolight.otf);
-        }
-        
-        @media only screen and (max-width: 969px) {}
-        
-        body {
-            font-family: Traffolight;
-            margin: 0;
-            /*width: 100%;*/
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
-        
-        h3 {
-            font-size: 42px;
-        }
-        
-        .dropmenu a {
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            padding: 20px;
-        }
-        
-        .header,
-        .footer {
-            background-image: linear-gradient(#02162c, #023a4e);
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3px;
-        }
-        
-        .dropmenu {
-            display: inline-block;
-            width: 170px;
-        }
-        
-        .content {
-            display: none;
-            position: absolute;
-        }
-        
-        .footer {
-            height: 110px;
-            background-color: #02162c;
-            background-image: none;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-            margin: 3rem 0 0 0;
-        }
-        
-        .footer p {
-            color: white;
-        }
-        
-        .dropmenu:hover .content {
-            display: flex;
-            flex-flow: column;
-        }
-        
-        .dropmenu:hover .content a {
-            position: relative;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            width: 110px;
-            font-size: 26px;
-            color: white;
-            background-color: #0e4052;
-            border: 2px;
-        }
-        
-        .dropmenu:hover .content a:hover {
-            background-color: #214d5e;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./location.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 
 <body>
@@ -96,19 +14,21 @@
         <div class="dropmenu">
             <img src="./images/dropdownicon.png" alt="" width="66px" height="60px">
             <div class="content">
-                <a href="Home.html"> Home </a>
                 <a href="About.html"> About </a>
                 <a href="Order.html"> Menu </a>
                 <a href="location.html"> Location </a>
-                <a href="contactus.html"> Contact Us </a>
+                <a href="contactus.html"> Contact </a>
             </div>
         </div>
     </div>
-    <p>Jl. Gajah Mada Raya No. 92, Gajah Mada, Jakarta Barat</p>
-    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Gajah%20Mada%20Raya%20No.%2092,%20Gajah%20Mada,%20Jakarta%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    <p>Jl. Ir. H. Juanda No. 181 - 183, Dago Atas, Bandung</p>
-    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Ir.%20H.%20Juanda%20No.%20181%20-%20183,%20Dago%20Atas,%20Bandung&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
+    <div class="main">
+        <div class="back">
+            <p>Jl. Gajah Mada Raya No. 92, Gajah Mada, Jakarta Barat</p>
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Gajah%20Mada%20Raya%20No.%2092,%20Gajah%20Mada,%20Jakarta%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <p>Jl. Ir. H. Juanda No. 181 - 183, Dago Atas, Bandung</p>
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Jl.%20Ir.%20H.%20Juanda%20No.%20181%20-%20183,%20Dago%20Atas,%20Bandung&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
     <div class="footer">
         <p> Copy right by </p>
     </div>

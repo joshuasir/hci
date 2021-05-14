@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Traffolight;
+    src: url(./fontTraffolight/Traffolight.otf);
+}
+
+@media only screen and (max-width: 969px) {}
+
+.header,
+.footer {
+    background-image: linear-gradient(#02162c, #023a4e);
+    display: flex;
+    width: 99.7%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.dropmenu {
+    display: inline-block;
+    width: 170px;
+}
+
+.content {
+    display: none;
+    position: absolute;
+}
+
+.footer {
+    height: 110px;
+    background-color: #02162c;
+    background-image: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropmenu:hover .content {
+    display: flex;
+    flex-flow: column;
+}
+
+.dropmenu:hover .content a {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 110px;
+    font-size: 26px;
+    color: white;
+    background-color: #0e4052;
+    border: 2px;
+}
+
+.dropmenu:hover .content a:hover {
+    background-color: #214d5e;
+}
+
+.dropmenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Traffolight;
+}
