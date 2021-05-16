@@ -18,7 +18,7 @@ h3 {
 }
 
 .banner img {
-    width: 1658px;
+    width: 1812px;
 }
 
 .about {
@@ -68,6 +68,7 @@ h4 {
     font-size: 24px;
     color: rgb(48, 48, 48);
     height: 24px;
+    letter-spacing: 1.5px;
 }
 
 .about .side .bot {
@@ -92,6 +93,12 @@ a {
     padding: 20px;
 }
 
+.header a {
+    position: relative;
+    border: none;
+    padding: 0px;
+}
+
 .about a:hover,
 .visit a:hover {
     background-color: black;
@@ -100,14 +107,15 @@ a {
 
 .menu {
     width: 100%;
-    height: 700px;
+    height: 770px;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
-    background-image: linear-gradient( #0a3c4ee8, #02162c), url(./images/bahanmakanan.jpg);
+    background-image: linear-gradient( #0c455ae8, #02162c), url(./images/bahanmakanan.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
+    padding-bottom: 20px;
 }
 
 .menu p,
