@@ -116,7 +116,9 @@ p {
     letter-spacing: 0.8px;
 }
 
-button {
+.food button,
+.drink button,
+.dessert button {
     border: none;
     background-color: #02162c;
     color: white;
@@ -128,18 +130,54 @@ button {
     /* box-shadow: 5px 10px #a09f9f; */
 }
 
-button:hover {
+.food button:hover,
+.drink button:hover,
+.dessert button:hover {
     background-color: #02162ccb;
     cursor: pointer;
 }
 
-button:active {
+.food button:active,
+.drink button:active,
+.dessert button:active {
     border: solid rgba(253, 253, 253, 0.219);
 }
 
 .slides {
     text-align: center;
     margin: 3rem;
+}
+
+.promotion {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1570px;
+}
+
+.promotion button {
+    border: none;
+    background-color: #02162c;
+    height: 95px;
+    width: 70px;
+}
+
+.promotion button img {
+    height: 55px;
+}
+
+.promotion button:hover {
+    border: none;
+    background-color: #02162ccc;
+}
+
+.promotion button:active {
+    border: solid rgba(253, 253, 253, 0.219);
+}
+
+.promotion .right_arrow {
+    transform: rotate(180deg);
 }
 
 #slider {
