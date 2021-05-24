@@ -1,25 +1,25 @@
 var curr = 1;
-var $wrapper = $('.slides', '#slider');
-var $slider = $('.slide', '#slider');
 
-function next() {
-    $wrapper.animate({
-        'margin-left': '-=' + 1420
-    }, 1000, function() {
-        if (++curr === $slider.length) {
-            curr = 1;
-            $wrapper.css('margin-left', 0);
+function prev() {
+    if (curr === 1) {
+        $('.slides', '#slider').css('margin-left', -7100);
+    }
+    $('.slides', '#slider').animate({
+        'margin-left': '+=' + 1420
+    }, 1200, function() {
+        if (--curr <= 0) {
+            curr = $('.slide', '#slider').length - 1;
         }
     });
 }
 
-function prev() {
-    $wrapper.animate({
-        'margin-left': '+=' + 1420
-    }, 1000, function() {
-        if (++curr === $slider.length) {
+function next() {
+    $('.slides', '#slider').animate({
+        'margin-left': '-=' + 1420
+    }, 1200, function() {
+        if (++curr >= $('.slide', '#slider').length) {
+            $('.slides', '#slider').css('margin-left', 0);
             curr = 1;
-            $wrapper.css('margin-left', 0);
         }
     });
 }
@@ -27,10 +27,13 @@ $(function() {
 
     var interval;
 
+    var $wrapper = $('.slides', '#slider');
+
     function init() {
         interval = setInterval(function() {
             next();
         }, 4000);
+
     }
 
     function stop() {
