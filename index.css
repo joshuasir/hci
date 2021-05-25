@@ -3,8 +3,6 @@
                 src: url(./fontTraffolight/Traffolight.otf);
             }
             
-            @media only screen and (max-width: 969px) {}
-            
             .header,
             .footer {
                 margin: 0 0 0 0;
@@ -17,13 +15,38 @@
             }
             
             .dropmenu {
-                display: inline-block;
-                width: 170px;
+                display: none;
+            }
+            
+            .options {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-right: 60px;
+            }
+            
+            .options a {
+                width: 120px;
+                font-size: 26px;
+                color: white;
+                text-decoration: none;
+                font-family: Traffolight;
             }
             
             .content {
                 display: none;
                 position: absolute;
+            }
+            
+            @media only screen and (max-width: 969px) {
+                body .header .dropmenu {
+                    display: inline-block;
+                    width: 170px;
+                }
+                body .header .options {
+                    display: none;
+                }
             }
             
             .footer {
@@ -60,6 +83,11 @@
                 color: white;
                 background-color: #0e4052;
                 border: 2px;
+            }
+            
+            .options a:hover,
+            .options .userloc {
+                color: rgb(189, 252, 252);
             }
             
             .dropmenu:hover .content a:hover {
