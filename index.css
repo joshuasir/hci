@@ -15,15 +15,18 @@
             }
             
             .dropmenu {
-                display: none;
+                display: inline-block;
+                width: 170px;
+                /* display: none; */
             }
             
             .options {
-                display: flex;
+                display: none;
+                /* display: flex;
                 flex-flow: row;
                 align-items: center;
                 justify-content: space-evenly;
-                padding-right: 60px;
+                padding-right: 60px; */
             }
             
             .options a {
