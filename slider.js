@@ -13,15 +13,15 @@ function stop() {
 }
 
 function disable() {
-    right_button = document.getElementById('button_next');
-    left_button = document.getElementById('button_prev');
+    right_button = $('#button_next');
+    left_button = $('#button_prev');
 
-    left_button.disabled = true;
-    right_button.disabled = true;
+    left_button.prop('disabled', true);
+    right_button.prop('disabled', true);
 
     setTimeout(function() {
-        left_button.disabled = false;
-        right_button.disabled = false;
+        left_button.prop('disabled', false);
+        right_button.prop('disabled', false);
     }, 1500);
 }
 
