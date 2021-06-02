@@ -162,6 +162,7 @@ p {
     background-color: #02162c;
     height: 95px;
     width: 70px;
+    cursor: pointer;
 }
 
 .promotion button img {
