@@ -34,6 +34,7 @@ h3 {
 
 .about .side {
     height: 500px;
+    width: 90%;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
@@ -44,6 +45,7 @@ h3 {
     width: 25%;
     height: 44%;
     opacity: 0.1;
+    z-index: -2;
 }
 
 .about .side .background {
@@ -88,9 +90,13 @@ a {
     position: absolute;
     text-decoration: none;
     color: black;
-    border: solid black 2px;
+    border: solid black 4px;
     font-size: 20px;
     padding: 20px;
+}
+
+.about a {
+    margin-right: 40px;
 }
 
 .header a {

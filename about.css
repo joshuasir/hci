@@ -30,16 +30,20 @@ p,
 .sosmed {
     font-family: Traffolight;
     height: 100px;
-    font-size: 50px;
+    font-size: 70px;
+    word-spacing: 2px;
 }
 
 .logo {
-    opacity: 0.2;
+    opacity: 0.14;
     position: absolute;
+    width: 800px;
+    height: 800px;
+    z-index: -2;
 }
 
 .logopos {
-    width: 1200px;
+    width: 1700px;
     height: 140px;
     display: flex;
     justify-content: flex-end;
@@ -49,7 +53,7 @@ p,
 #about {
     display: flex;
     align-items: center;
-    color: rgb(141, 140, 140);
+    color: rgb(87, 87, 87);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 190px;
     width: 65vw;

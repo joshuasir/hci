@@ -31,7 +31,7 @@ label {
 input,
 select {
     border: none;
-    border-bottom: #02162cbb solid 1.1px;
+    border-bottom: #7e8892bb solid 3px;
     height: 20px;
     font-size: 16px;
     padding-top: 5px;
@@ -50,7 +50,7 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #48719e
+    border-color: #02162cbb;
 }
 
 select {
