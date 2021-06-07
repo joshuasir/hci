@@ -1,30 +1,6 @@
 var curr = 1;
 var interval;
 
-
-function init() {
-    interval = setInterval(function() {
-        next();
-    }, 4000);
-}
-
-function stop() {
-    clearInterval(interval);
-}
-
-function disable() {
-    right_button = $('#button_next');
-    left_button = $('#button_prev');
-
-    left_button.prop('disabled', true);
-    right_button.prop('disabled', true);
-
-    setTimeout(function() {
-        left_button.prop('disabled', false);
-        right_button.prop('disabled', false);
-    }, 1500);
-}
-
 function prev() {
     stop();
     disable();
@@ -54,6 +30,32 @@ function next() {
     });
     init();
 }
+
+
+function stop() {
+    clearInterval(interval);
+}
+
+function init() {
+    interval = setInterval(function() {
+        next();
+    }, 4000);
+}
+
+function disable() {
+    right_button = $('#button_next');
+    left_button = $('#button_prev');
+
+    left_button.prop('disabled', true);
+    right_button.prop('disabled', true);
+
+    setTimeout(function() {
+        left_button.prop('disabled', false);
+        right_button.prop('disabled', false);
+    }, 1500);
+}
+
+
 
 
 $(function() {
