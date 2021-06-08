@@ -188,27 +188,20 @@
     }
     
     #slider {
-        width: 1420px;
-        height: 800px;
+        display: inline-block;
+        vertical-align: middle;
         overflow: hidden;
     }
     
     #slider .slides {
-        display: block;
-        width: 12000px;
-        height: 800px;
-        margin: 0;
-        padding: 0;
+        position: relative;
     }
     
-    #slider .slide {
+    #slider .slides .slide {
         float: left;
-        list-style-type: none;
-        width: 1420px;
-        height: 800px;
     }
     
-    #slider .slide img {
+    #slider .slides .slide img {
         width: 100%;
         height: 100%;
     }
