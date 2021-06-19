@@ -29,4 +29,3 @@ ad3.jpg - https://images.squarespace-cdn.com/content/v1/5dccc025a7ec043789f57f1d
 arrow.png - https://www.pngitem.com/pimgs/m/202-2022960_left-white-arrow-icon-hd-png-download.png
 6f17c91071f9e6990e5507f18e944e8c.jpg - https://i.pinimg.com/564x/6f/17/c9/6f17c91071f9e6990e5507f18e944e8c.jpg
 bigbanner.jpg - https://i0.wp.com/cdn.cnn.com/cnnnext/dam/assets/181114125847-korean-food-2620003201012137k-kimchi-assortment-full-169.jpg
-https://cdn.dribbble.com/users/1375764/screenshots/6576821/sample_dribbb.png?compress=1&resize=800x600
