@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 6px;
+    z-index: 2;
 }
 
 .dropmenu {

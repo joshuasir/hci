@@ -3,7 +3,8 @@ body {
     margin: 0 0 0 0;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
 h3 {
@@ -18,7 +19,7 @@ h3 {
 }
 
 .banner img {
-    width: 1812px;
+    width: 100%;
 }
 
 .about {
@@ -34,7 +35,7 @@ h3 {
 
 .about .side {
     height: 500px;
-    width: 90%;
+    width: 73%;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
